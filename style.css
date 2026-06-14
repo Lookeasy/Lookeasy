@@ -29,6 +29,7 @@ main {
     border-radius: 5%;
     display: flex-box;
     text-align: center;
+    box-shadow: 0 5px 25px 10px #000000;
 }
 
 h1 {

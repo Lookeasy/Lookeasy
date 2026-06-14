@@ -1,5 +1,5 @@
 #Lookeasy
-13/06/26
+13/06/26-Pedro Machado.
 O Lookeasy é um projeto em desenvolvimento, por 4 estudantes da Etec Bento
 Quirino
 
