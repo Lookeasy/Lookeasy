@@ -1,0 +1,111 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+#fundo {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #161616 20%, #fff 200%);
+}
+
+#login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30rem;
+    width: 30rem;
+    background-color: #161616;
+    border-radius: 5%;
+    display: flex-box;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    padding-top: 1rem;
+    color: #fff;
+    text-shadow: 0 0 10px #772491, 0 0 20px #772491;
+}
+
+#caixas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 20rem;
+}
+
+#questao1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 3rem;
+    color: #fff;
+    height: 5rem;
+}
+
+#questao2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 10rem;
+    color: #fff;
+    height: 5rem;
+}
+
+input {
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 15rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 20px 1px #772491;
+}
+
+::placeholder {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 13.5rem;
+    text-decoration: none;
+}
+
+#semsenha {
+    top: 16.5rem;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20rem;
+    width: 11rem;
+    height: 2rem;
+    background-color: #772491;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px #772491;
+}
