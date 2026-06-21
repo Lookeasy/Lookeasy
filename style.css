@@ -8,21 +8,31 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 main {
     height: 100vh;
     width: 100%;
 }
 
-#fundo {
+.fundo {
     height: 100vh;
     width: 100%;
     background: linear-gradient(135deg, #161616 20%, #fff 200%);
 }
 
-#login {
+.abrirLogin {
+    position: absolute;
+    top: 2rem;
+    left: 75rem;
+}
+
+.login {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 900px;
     transform: translate(-50%, -50%);
     height: 30rem;
     width: 30rem;
@@ -31,16 +41,77 @@ main {
     display: flex-box;
     text-align: center;
     box-shadow: 0 5px 25px 10px #000000;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.login.ativo {
+    top: 50%;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.abrirCadastro {
+    position: absolute;
+    top: 2rem;
+    left: 63rem;
+}
+
+.cadastro {
+    position: absolute;
+    left: 50%;
+    top: 900px;
+    transform: translate(-50%, -50%);
+    height: 30rem;
+    width: 30rem;
+    background-color: #161616;
+    border-radius: 5%;
+    display: flex-box;
+    text-align: center;
+    box-shadow: 0 5px 25px 10px #000000;
+    transition: all 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+
+.cadastro.ativo {
+    visibility: visible;
+    top: 50%;
+    transition: all 0.5s;
+}
+
+.cadastro::-webkit-scrollbar {
+    width: 14px;
+}
+
+.cadastro::-webkit-scrollbar-thumb {
+    background: #772491;
+    border-width: 50px 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 12px;
+    background-clip: padding-box;
+}
+
+.minha-caixa::-webkit-scrollbar-track {
+  background: transparent; 
 }
 
 h1 {
     color: #fff;
-    padding-top: 1rem;
-    color: #fff;
     text-shadow: 0 0 10px #772491, 0 0 20px #772491;
+    transition: all 1s;
+    padding-top: 1rem;
+    width: 100%;
 }
 
-#caixas {
+h1:hover {
+    transition: all 1s;
+    transform: scale(1.01);
+}
+
+.caixas {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -49,30 +120,46 @@ h1 {
     width: 20rem;
 }
 
-#questao1 {
+.questao {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 3rem;
-    color: #fff;
     height: 5rem;
 }
 
-#questao2 {
+.questao.b {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     top: 10rem;
-    color: #fff;
-    height: 5rem;
+}
+
+.questao.bC {
+    position: absolute;
+    top: 10rem;
+}
+
+.questao.cC {
+    position: absolute;
+    top: 17rem;
+}
+
+.questao.dC {
+    position: absolute;
+    top: 24rem;
 }
 
 input {
     border-radius: 5px;
     height: 1.5rem;
     width: 15rem;
-    border: 1px solid black;
+    border: none;
     box-shadow: 1px 1px 20px 1px #772491;
+    transition: all 1s;
+}
+
+input:hover {
+    transition: all 1s;
+    transform: scale(1.01);
 }
 
 ::placeholder {
@@ -85,6 +172,7 @@ label {
     display: inline-block;
     margin-bottom: 10px;
     font-size: x-large;
+    color: #fff;
 }
 
 a {
@@ -95,7 +183,7 @@ a {
     text-decoration: none;
 }
 
-#semsenha {
+.semSenha {
     top: 16.5rem;
 }
 
@@ -110,4 +198,27 @@ button {
     color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 1px #772491;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(233, 0, 0);
+    transition: all 1s;
+}
+
+.criarConta {
+    position: absolute;
+    top: 31rem;
+}
+
+.comConta {
+    position: absolute;
+    top: 27.5rem;
+}
+
+a {
+    color: #772491;
+    cursor: pointer;
 }

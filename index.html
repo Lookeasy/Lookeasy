@@ -8,24 +8,50 @@
 </head>
 <body>
     <main>
-        <div id="fundo">
-            <div id="login">
+        <div class="fundo">
+            <button class="abrirLogin">Login</button>
+            <div class="login">
                 <h1>Bem vindo(a) ao Lookeasy!</h1>
-                <section id="caixas">
-                    <form id="questao1">
+                <section class="caixas">
+                    <form class="questao a">
                         <label>Email</label>
                         <input type="email" name="Email" placeholder="Seu melhor email!">
                     </form>
-                    <form id="questao2">
+                    <form class="questao b">
                         <label>Senha</label>
                         <input type="password" name="Senha" placeholder="Sua senha!">
                     </form>
-                    <button>Entrar</button>
-                    <a href="">Não tenho conta</a>
-                    <a id="semsenha" href="">Esqueci minha senha</a>
+                    <a class="semConta">Não tenho conta</a>
+                    <a class="semSenha">Esqueci minha senha</a>
+                    <button class="entrar">Entrar</button>
+                </section>
+            </div>
+            <button class="abrirCadastro">Cadastro</button>
+            <div class="cadastro">
+                <h1>Crie sua conta!</h1>
+                <section class="caixas">
+                    <form class="questao aC">
+                        <label>Nome completo</label>
+                        <input type="text" name="nome" placeholder="Seu nome completo">
+                    </form>
+                    <form class="questao bC">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Seu melhor email!">
+                    </form>
+                    <form class="questao cC">
+                        <label>Crie uma senha</label>
+                        <input type="password" name="senhaC" placeholder="Crie sua senha">
+                    </form>
+                    <form class="questao dC">
+                        <label>Confirme sua senha</label>
+                        <input type="password" name="senhaC" placeholder="Confirme sua senha">
+                    </form>
+                    <a class="comConta">Ja tenho uma conta</a>
+                    <button class="criarConta">Criar conta</button>
                 </section>
             </div>
         </div>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
